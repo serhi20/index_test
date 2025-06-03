@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simpsons Widget Test</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: linear-gradient(180deg, #ffe355 0%, #ffd90f 70%, #ffeea5 100%);
+      font-family: 'Luckiest Guy', cursive, Arial, sans-serif;
+      color: #232b4a;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .simpsons-cloud {
+      background: #fff;
+      border-radius: 50% 50% 40% 40% / 60% 60% 40% 40%;
+      width: 400px;
+      height: 180px;
+      margin-top: 60px;
+      box-shadow: 0 8px 50px 0 rgba(150,120,20,0.15);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 5px solid #fff7b8;
+      position: relative;
+      z-index: 1;
+    }
+    h1 {
+      color: #edb103;
+      text-shadow:
+        -3px 3px 0 #232b4a,
+        2px 2px 8px #fff7b8;
+      font-size: 3rem;
+      margin: 0;
+      letter-spacing: 2px;
+      font-family: 'Luckiest Guy', cursive, Arial, sans-serif;
+    }
+    .simpsons-quote {
+      margin-top: 30px;
+      font-size: 1.5rem;
+      color: #51586a;
+      background: #fff9e2;
+      border-radius: 20px;
+      padding: 16px 30px;
+      border: 3px dashed #f2c62f;
+      box-shadow: 0 2px 20px 0 rgba(160,140,50,0.07);
+      max-width: 500px;
+      text-align: center;
+      font-style: italic;
+    }
+    .maggie {
+      font-size: 1.25rem;
+      margin-top: 10px;
+      text-align: center;
+      color: #296ecb;
+    }
+    /* Місце для віджета */
+    #widget-zone {
+      margin-top: 40px;
+      padding: 40px 0;
+      min-width: 300px;
+    }
+  </style>
+</head>
+<body>
+<div class="simpsons-cloud">
+  <h1>
+    Testing Your Widget!<br>
+    <span style="font-size:1.3rem;color:#27b6e6;">"The Simpsons" style</span>
+  </h1>
+</div>
+
+<div class="simpsons-quote">
+  “Eat my shorts!<br>
+  — Bart Simpson”
+</div>
+
+<div class="maggie">
+  <span>Click anywhere or say "D'oh!" if it doesn't work…</span>
+</div>
+
+<div id="widget-zone">
+  <!-- Віджет вставляється тут -->
+  <test-widget></test-widget>
+</div>
+
+<script src="widget.js"></script>
+</body>
+</html>
